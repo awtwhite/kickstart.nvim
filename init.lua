@@ -600,6 +600,8 @@ require('lazy').setup({
         },
 
         tailwindcss = {},
+
+        astro = {},
       }
 
       -- Ensure the servers and tools above are installed
@@ -617,6 +619,7 @@ require('lazy').setup({
         'stylua', -- Used to format Lua code
         'typescript-language-server',
         'tailwindcss-language-server',
+        'astro-language-server',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
