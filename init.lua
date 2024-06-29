@@ -636,6 +636,8 @@ require('lazy').setup({
             },
           },
         },
+
+        tailwindcss = {},
       }
 
       -- Ensure the servers and tools above are installed
@@ -652,6 +654,7 @@ require('lazy').setup({
       vim.list_extend(ensure_installed, {
         'stylua', -- Used to format Lua code
         'typescript-language-server',
+        'tailwindcss-language-server',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
